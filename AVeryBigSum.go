@@ -18,7 +18,7 @@ func aVeryBigSum(n int, ar []int64) int64 {
 	for counter := 0; counter < n; counter++ {
 		result += ar[counter]
 	}
-
+	
 	return result
 }
 
