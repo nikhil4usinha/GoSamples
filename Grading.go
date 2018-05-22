@@ -10,24 +10,22 @@ import (
 )
 
 func gradingStudents(grades []int32) []int32 {
-	var result []int32
+	var result []int32 = grades
 
 	for index := 0; index < len(grades); index++ {
 		var inputGgrade = grades[index]
 		var outputGrade int32
 		if inputGgrade < 38 {
-			outputGrade = inputGgrade
 		} else {
 			remainder := inputGgrade % 5
 			quotient := inputGgrade / 5
 			if remainder >= 3 {
 				outputGrade = (quotient + 1) * 5
+				result[index]=outputGrade
 			} else {
-				outputGrade = inputGgrade
 			}
 		}
 
-		result[index] = outputGrade
 	}
 
 	return result
