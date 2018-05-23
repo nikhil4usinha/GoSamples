@@ -11,8 +11,8 @@ import (
 
 // Complete the breakingRecords function below.
 func breakingRecords(score []int32) []int32 {
-	var highestScore int32 = score[0]
-	var lowestScore int32 = score[0]
+	var highestScore = score[0]
+	var lowestScore = score[0]
 
 	var highestScoreCount int32 = 0
 	var lowestScoreCount int32 = 0
